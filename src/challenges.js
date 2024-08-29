@@ -13,7 +13,21 @@ const repeatedWords = [
   "matter"
 ];
 
-function howManyTimes() {}
+function howManyTimes(matrix, word) {
+
+  let Count = 0
+
+ for( let i=0; i < matrix.length; i++ ){
+
+  if (word === matrix[i]){
+    Count++
+  }
+ }
+
+return Count
+
+}
+console.log(howManyTimes(repeatedWords, "matter"));
 
 
 
